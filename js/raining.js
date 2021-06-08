@@ -14,8 +14,7 @@ function rainingAPI() {
 	}).then((data) => {
 		let len = data.records.location.length;
 		records = data.records;
-		obs_time = data.records.location[0].time.obsTime;
-		console.log(obs_time);		
+		obs_time = data.records.location[0].time.obsTime;		
 		for(let i=0; i<taiwan_cities.length; i++) {
 			let city = taiwan_cities[i];
 			findCityData(len, city);
@@ -57,7 +56,6 @@ function sumCityData(city_list, current_city) {
 
 
 function renderCityRaining(city_sum) {
-	console.log(city_sum);
 	const container = document.querySelector("#raining");
 	const item = document.createElement("div");
 	const city = document.createElement("div");
@@ -66,6 +64,7 @@ function renderCityRaining(city_sum) {
 	item.className = "location";
 	city.className = "town";
 	amount.className = "amount";
+	obs_time.className = "obsTime";
 	city.textContent = city_sum.city;
 	amount.textContent = city_sum.sum + " mm";
 	obs_time.textContent = "Update : " + city_sum.obs_time;
