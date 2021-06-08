@@ -1,7 +1,57 @@
-#raining{}
+#raining{
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
 #raining>.location{
-	border-bottom:1px solid #000000;
+	box-sizing: border-box;
+	flex-basis: calc( 100% - 20px);
+	box-shadow: 0 0 48px 0 rgb(0 0 0 / 10%);
+	border-radius: 32px;
+	padding: 20px;
+	margin: 10px;
 }
 #raining>.location>.town{
 	font-weight:bold;
 }
+
+.town{
+	margin-bottom: 5px;
+	margin-left: 20px;
+	position: relative; 
+	line-height: 24px;
+}
+
+.town::before{
+	content:url('../img/location.svg');
+	position: absolute; 
+	width: 24px;
+	height: 24px;
+	left: -24px;
+}
+
+.amount{
+	font-size: 20px;
+}
+
+.obsTime{
+	font-size: 13px;
+	color: #aaa;
+	margin-top: 5px;
+}
+
+
+@media (min-width: 768px), print{
+	#raining>.location{
+		box-sizing: border-box;
+		flex-basis: calc( 25% - 20px);
+		box-shadow: 0 0 48px 0 rgb(0 0 0 / 10%);
+		border-radius: 32px;
+		padding: 20px;
+		margin: 10px;
+	}
+
+}
+
+
+

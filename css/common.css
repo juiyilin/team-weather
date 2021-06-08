@@ -1,3 +1,18 @@
 body{
-	font-size:20px;
+	font-size: 20px;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #f7f7f7;
+}
+
+h3{
+	margin: 40px  0 10px;
+	padding-left: 20px;
+	color: #0074ad;
+	font-size: 30px;
+}
+
+h4{
+	font-size: 24px;
+	margin: 20px  0;
 }
