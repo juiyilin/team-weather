@@ -1,21 +1,84 @@
 #weather{
-    padding: 0 20px;
+    padding: 0 20px 40px;
+
 }
 
 #time-0,
 #time-1,
 #time-2{
-    padding: 10px 20px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 4px;
+    letter-spacing: 0;
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+#time-0{
+    margin-left: 0;
 }
 
 .button{
     margin-top: 40px;
 }
 
+.weather-head,
+.weather-body{
+    background: #fff;
+    display: flex;
+    font-family: sans-serif;
+    min-width: 400px;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BDBDBC;
+    cursor: pointer;
+}
+
+.weather-head{
+    margin-top: 40px;
+    background-color: #C3F5E2;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.weather-body:hover{
+    transition: all 0.5s;
+    background: #efefef;
+}
+
+.weather-body:last-of-type{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .weather-head>div,
 .weather-body>div{
+    flex-basis: 16.66%;
     margin-top: 40px;
     width: 100px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px), print{
+    .weather-head>div,
+    .weather-body>div{
+        font-size: 16px;
+    }
+
+    #time-0,
+    #time-1,
+    #time-2{
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 5px;
+        letter-spacing: 1px;
+    }
 }

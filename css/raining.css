@@ -6,16 +6,31 @@
 #raining>.location{
 	box-sizing: border-box;
 	flex-basis: calc( 100% - 20px);
-	box-shadow: 0 0 48px 0 rgb(0 0 0 / 10%);
-	border-radius: 32px;
+	box-shadow: 0 3px 25px rgb(85 74 45 / 16%);
+	border-radius: 10px;
 	padding: 20px;
 	margin: 10px;
+	cursor: pointer;
+	background: #fff;
 }
+#raining>.location:hover {
+	transition: all 0.5s;
+    background: #FFF8B1;
+    transform: translate3d(-4px,-4px,0);
+}
+
+#raining>.location:hover .town,
+#raining>.location:hover .amount,
+#raining>.location:hover .obsTime
+{
+}
+
 #raining>.location>.town{
-	font-weight:bold;
+	font-weight:400;
 }
 
 .town{
+	font-weight:300;
 	margin-bottom: 5px;
 	margin-left: 20px;
 	position: relative; 
@@ -46,7 +61,7 @@
 		box-sizing: border-box;
 		flex-basis: calc( 25% - 20px);
 		box-shadow: 0 0 48px 0 rgb(0 0 0 / 10%);
-		border-radius: 32px;
+		border-radius: 10px;
 		padding: 20px;
 		margin: 10px;
 	}
