@@ -1,4 +1,6 @@
 # 第七組
+## 成果展示連結：https://juiyilin.github.io/team-weather/  
+  
 ## 參與成員及分工：
 ### 林育琦 Chi Lin
 - 雨量觀測合併為縣市累計雨量(raining.js)
@@ -10,5 +12,3 @@
 - 整體css
 - 雨量觀測css
 - 氣象預報css  
-
-## 成果展示連結：https://juiyilin.github.io/team-weather/
